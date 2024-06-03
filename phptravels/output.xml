@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20240524 14:53:02.695" rpa="false" schemaversion="4">
+<suite id="s1" name="Support" source="C:\Users\NTHERE\PycharmProjects\phptravels\Resources\Support.robot">
+<test id="s1-t1" name="open my browser" line="13">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240524 14:53:02.905" level="INFO">Opening browser 'edge' to base url 'https://phptravels.com/demo/'.</msg>
+<status status="PASS" starttime="20240524 14:53:02.904" endtime="20240524 14:53:07.848"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240524 14:53:07.849" endtime="20240524 14:53:07.910"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240524 14:53:07.911" endtime="20240524 14:53:07.911"/>
+</kw>
+<status status="PASS" starttime="20240524 14:53:02.903" endtime="20240524 14:53:07.912"/>
+</test>
+<test id="s1-t2" name="Log In" line="18">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="mynavbar"]/div/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240524 14:53:07.915" level="INFO">Clicking element '//*[@id="mynavbar"]/div/a[1]'.</msg>
+<status status="PASS" starttime="20240524 14:53:07.914" endtime="20240524 14:53:10.247"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20240524 14:53:10.248" endtime="20240524 14:53:14.278"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:inputEmail</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240524 14:53:14.279" level="INFO">Typing text 'nutan-raju.there@capgemini.com' into text field 'id:inputEmail'.</msg>
+<status status="PASS" starttime="20240524 14:53:14.278" endtime="20240524 14:53:17.598"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:inputPassword</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20240524 14:53:17.600" level="INFO">Typing password into text field 'id:inputPassword'.</msg>
+<msg timestamp="20240524 14:53:19.742" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20240524 14:53:20.979" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20240524 14:53:17.599" endtime="20240524 14:53:20.979"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollBy(0, 30)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20240524 14:53:20.981" level="INFO">Executing JavaScript:
+window.scrollBy(0, 30)
+Without any arguments.</msg>
+<status status="PASS" starttime="20240524 14:53:20.980" endtime="20240524 14:53:22.010"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>30s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240524 14:53:52.012" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" starttime="20240524 14:53:22.012" endtime="20240524 14:53:52.013"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollBy(0, 900)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20240524 14:53:52.016" level="INFO">Executing JavaScript:
+window.scrollBy(0, 900)
+Without any arguments.</msg>
+<status status="PASS" starttime="20240524 14:53:52.014" endtime="20240524 14:53:53.034"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@id='login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240524 14:53:53.037" level="INFO">Clicking button '//button[@id='login']'.</msg>
+<status status="PASS" starttime="20240524 14:53:53.035" endtime="20240524 14:54:00.138"/>
+</kw>
+<status status="PASS" starttime="20240524 14:53:07.913" endtime="20240524 14:54:00.140"/>
+</test>
+<test id="s1-t3" name="support" line="33">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="Primary_Navbar-Support"]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240524 14:54:00.142" level="INFO">Clicking element '//*[@id="Primary_Navbar-Support"]/a'.</msg>
+<status status="PASS" starttime="20240524 14:54:00.141" endtime="20240524 14:54:02.324"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="Primary_Navbar-Support-Tickets"]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240524 14:54:02.327" level="INFO">Clicking element '//*[@id="Primary_Navbar-Support-Tickets"]/a'.</msg>
+<status status="PASS" starttime="20240524 14:54:02.326" endtime="20240524 14:54:05.682"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollBy(0, 900)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20240524 14:54:05.684" level="INFO">Executing JavaScript:
+window.scrollBy(0, 900)
+Without any arguments.</msg>
+<status status="PASS" starttime="20240524 14:54:05.683" endtime="20240524 14:54:06.708"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="Secondary_Sidebar-Support-Open_Ticket"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240524 14:54:06.711" level="INFO">Clicking element '//*[@id="Secondary_Sidebar-Support-Open_Ticket"]'.</msg>
+<status status="PASS" starttime="20240524 14:54:06.710" endtime="20240524 14:54:09.923"/>
+</kw>
+<status status="PASS" starttime="20240524 14:54:00.141" endtime="20240524 14:54:09.924"/>
+</test>
+<test id="s1-t4" name="Home" line="39">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="Primary_Navbar-Home"]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240524 14:54:09.929" level="INFO">Clicking element '//*[@id="Primary_Navbar-Home"]/a'.</msg>
+<status status="PASS" starttime="20240524 14:54:09.928" endtime="20240524 14:54:12.884"/>
+</kw>
+<status status="PASS" starttime="20240524 14:54:09.927" endtime="20240524 14:54:12.886"/>
+</test>
+<test id="s1-t5" name="open ticket" line="42">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="Primary_Navbar-Open_Ticket"]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240524 14:54:12.890" level="INFO">Clicking element '//*[@id="Primary_Navbar-Open_Ticket"]/a'.</msg>
+<status status="PASS" starttime="20240524 14:54:12.889" endtime="20240524 14:54:15.631"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="main-body"]/div/div[1]/div/div/div/div[2]/div/p[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240524 14:54:15.633" level="INFO">Clicking element '//*[@id="main-body"]/div/div[1]/div/div/div/div[2]/div/p[3]/a'.</msg>
+<status status="PASS" starttime="20240524 14:54:15.632" endtime="20240524 14:54:19.031"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='inputSubject']</arg>
+<arg>${subject}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240524 14:54:19.034" level="INFO">Typing text 'inquiry' into text field '//input[@id='inputSubject']'.</msg>
+<status status="PASS" starttime="20240524 14:54:19.032" endtime="20240524 14:54:22.355"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="inputMessage"]</arg>
+<arg>${Message}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240524 14:54:22.357" level="INFO">Typing text 'pending bill' into text field '//*[@id="inputMessage"]'.</msg>
+<status status="PASS" starttime="20240524 14:54:22.357" endtime="20240524 14:54:25.670"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@id='openTicketSubmit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240524 14:54:25.674" level="INFO">Clicking element '//button[@id='openTicketSubmit']'.</msg>
+<status status="PASS" starttime="20240524 14:54:25.672" endtime="20240524 14:54:28.973"/>
+</kw>
+<status status="PASS" starttime="20240524 14:54:12.888" endtime="20240524 14:54:28.974"/>
+</test>
+<test id="s1-t6" name="Affiliates" line="49">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="Primary_Navbar-Affiliates"]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240524 14:54:28.980" level="INFO">Clicking element '//*[@id="Primary_Navbar-Affiliates"]/a'.</msg>
+<status status="PASS" starttime="20240524 14:54:28.978" endtime="20240524 14:54:31.796"/>
+</kw>
+<status status="PASS" starttime="20240524 14:54:28.977" endtime="20240524 14:54:31.797"/>
+</test>
+<test id="s1-t7" name="logout" line="54">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="Secondary_Navbar-Account"]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240524 14:54:31.805" level="INFO">Clicking element '//*[@id="Secondary_Navbar-Account"]/a'.</msg>
+<status status="PASS" starttime="20240524 14:54:31.804" endtime="20240524 14:54:33.931"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="Secondary_Navbar-Account-Logout"]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240524 14:54:33.934" level="INFO">Clicking element '//*[@id="Secondary_Navbar-Account-Logout"]/a'.</msg>
+<status status="PASS" starttime="20240524 14:54:33.932" endtime="20240524 14:54:38.105"/>
+</kw>
+<status status="PASS" starttime="20240524 14:54:31.802" endtime="20240524 14:54:38.106"/>
+</test>
+<status status="PASS" starttime="20240524 14:53:02.697" endtime="20240524 14:54:38.109"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="7" fail="0" skip="0" id="s1" name="Support">Support</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

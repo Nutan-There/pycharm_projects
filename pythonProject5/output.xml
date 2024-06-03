@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231213 18:36:55.052" rpa="false" schemaversion="4">
+<suite id="s1" name="Demo2" source="C:\Users\NTHERE\PycharmProjects\pythonProject5\demo2.robot">
+<test id="s1-t1" name="Open NopCommerce Site" line="10">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231213 18:36:55.284" level="INFO">Opening browser 'Edge' to base url 'https://demo.nopcommerce.com/'.</msg>
+<msg timestamp="20231213 18:36:57.035" level="WARN">The msedgedriver version (119.0.2151.97) detected in PATH at C:\Program Files\Python312\Scripts\msedgedriver.exe might not be compatible with the detected MicrosoftEdge version (120.0.2210.61); currently, msedgedriver 120.0.2210.61 is recommended for MicrosoftEdge 120.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" starttime="20231213 18:36:55.284" endtime="20231213 18:37:01.038"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231213 18:37:01.038" endtime="20231213 18:37:01.186"/>
+</kw>
+<status status="PASS" starttime="20231213 18:36:55.283" endtime="20231213 18:37:01.186"/>
+</test>
+<test id="s1-t2" name="Search Product" line="14">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='small-searchterms']</arg>
+<arg>Laptops</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231213 18:37:01.188" level="INFO">Typing text 'Laptops' into text field '//input[@id='small-searchterms']'.</msg>
+<status status="PASS" starttime="20231213 18:37:01.188" endtime="20231213 18:37:01.457"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@class='button-1 search-box-button']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231213 18:37:01.459" level="INFO">Clicking button '//button[@class='button-1 search-box-button']'.</msg>
+<status status="PASS" starttime="20231213 18:37:01.458" endtime="20231213 18:37:02.223"/>
+</kw>
+<status status="PASS" starttime="20231213 18:37:01.187" endtime="20231213 18:37:02.224"/>
+</test>
+<doc>NopCommerce Demo Site Test</doc>
+<status status="PASS" starttime="20231213 18:36:55.054" endtime="20231213 18:37:02.225"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Demo2">Demo2</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231213 18:36:57.035" level="WARN">The msedgedriver version (119.0.2151.97) detected in PATH at C:\Program Files\Python312\Scripts\msedgedriver.exe might not be compatible with the detected MicrosoftEdge version (120.0.2210.61); currently, msedgedriver 120.0.2210.61 is recommended for MicrosoftEdge 120.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20240411 15:44:48.510" rpa="false" schemaversion="4">
+<suite id="s1" name="AddCartFromRecoItems" source="C:\Users\NTHERE\PycharmProjects\pythonProject6\Resources\AddCartFromRecoItems.robot">
+<test id="s1-t1" name="Test Case 22: Add to cart from Recommended items" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240411 15:44:48.861" level="INFO">Opening browser 'edge' to base url 'http://automationexercise.com'.</msg>
+<msg timestamp="20240411 15:44:52.261" level="WARN">The msedgedriver version (119.0.2151.97) detected in PATH at C:\Program Files\Python312\Scripts\msedgedriver.exe might not be compatible with the detected MicrosoftEdge version (123.0.2420.81); currently, msedgedriver 123.0.2420.81 is recommended for MicrosoftEdge 123.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240411 15:44:56.903" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20240411 15:44:56.905" level="FAIL">SessionNotCreatedException: Message: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 119
+Current browser version is 123.0.2420.81 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF7892925A2+60402]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7892172F2+253618]
+	(No symbol) [0x00007FF788FE9C99]
+	(No symbol) [0x00007FF78902907D]
+	(No symbol) [0x00007FF789028279]
+	(No symbol) [0x00007FF789021E65]
+	(No symbol) [0x00007FF78901D18B]
+	(No symbol) [0x00007FF78906423F]
+	(No symbol) [0x00007FF78905B863]
+	(No symbol) [0x00007FF78902C585]
+	(No symbol) [0x00007FF78902B993]
+	(No symbol) [0x00007FF78902CD14]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF789473444+1161924]
+	(No symbol) [0x00007FF7890AE5F6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF78916B083+37459]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF789162C4D+3613]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF789472184+1157124]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF789221648+295432]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF78921CB14+276180]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF78921CC42+276482]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF78920FA31+222705]
+	BaseThreadInitThunk [0x00007FFEA7B2257D+29]
+	RtlUserThreadStart [0x00007FFEA980AA58+40]
+</msg>
+<status status="FAIL" starttime="20240411 15:44:48.860" endtime="20240411 15:44:56.927"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20240411 15:44:56.928" endtime="20240411 15:44:56.928"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" starttime="20240411 15:44:56.929" endtime="20240411 15:44:56.929"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@href='/products']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240411 15:44:56.930" endtime="20240411 15:44:56.930"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@href='/product_details/1']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240411 15:44:56.930" endtime="20240411 15:44:56.931"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@class='btn btn-default cart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240411 15:44:56.931" endtime="20240411 15:44:56.931"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//a[@href='/view_cart']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240411 15:44:56.931" endtime="20240411 15:44:56.932"/>
+</kw>
+<status status="FAIL" starttime="20240411 15:44:48.860" endtime="20240411 15:44:56.932">SessionNotCreatedException: Message: session not created: This version of Microsoft Edge WebDriver only supports Microsoft Edge version 119
+Current browser version is 123.0.2420.81 with binary path C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+Stacktrace:
+	GetHandleVerifier [0x00007FF7892925A2+60402]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7892172F2+253618]
+	(No symbol) [0x00007FF788FE9C99]
+	(No symbol) [0x00007FF78902907D]
+	(No symbol) [0x00007FF789028279]
+	(No symbol) [0x00007FF789021E65]
+	(No symbol) [0x00007FF78901D18B]
+	(No symbol) [0x00007FF78906423F]
+	(No symbol) [0x00007FF78905B863]
+	(No symbol) [0x00007FF78902C585]
+	(No symbol) [0x00007FF78902B993]
+	(No symbol) [0x00007FF78902CD14]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF789473444+1161924]
+	(No symbol) [0x00007FF7890AE5F6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF78916B083+37459]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF789162C4D+3613]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF789472184+1157124]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF789221648+295432]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF78921CB14+276180]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF78921CC42+276482]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF78920FA31+222705]
+	BaseThreadInitThunk [0x00007FFEA7B2257D+29]
+	RtlUserThreadStart [0x00007FFEA980AA58+40]
+</status>
+</test>
+<status status="FAIL" starttime="20240411 15:44:48.513" endtime="20240411 15:44:56.935"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="AddCartFromRecoItems">AddCartFromRecoItems</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240411 15:44:52.261" level="WARN">The msedgedriver version (119.0.2151.97) detected in PATH at C:\Program Files\Python312\Scripts\msedgedriver.exe might not be compatible with the detected MicrosoftEdge version (123.0.2420.81); currently, msedgedriver 123.0.2420.81 is recommended for MicrosoftEdge 123.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>

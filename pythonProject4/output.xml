@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231204 18:30:03.361" rpa="false" schemaversion="4">
+<suite id="s1" name="Demo" source="C:\Users\NTHERE\PycharmProjects\pythonProject4\demo.robot">
+<test id="s1-t1" name="LoginTest with valid credentials" line="11">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>${appURL} ${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231204 18:30:03.651" level="INFO">Opening browser 'firefox' to base url 'https://www.saucedemo.com/ Edge'.</msg>
+<status status="PASS" starttime="20231204 18:30:03.650" endtime="20231204 18:30:10.524"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231204 18:30:10.524" endtime="20231204 18:30:10.534"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.saucedemo.com/</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231204 18:30:10.535" level="INFO">Opening browser 'edge' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20231204 18:30:10.534" endtime="20231204 18:30:14.953"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:user-name</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231204 18:30:14.957" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<msg timestamp="20231204 18:30:15.578" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231204 18:30:15.578" level="FAIL">Element with locator 'id:user-name' not found.</msg>
+<status status="FAIL" starttime="20231204 18:30:14.956" endtime="20231204 18:30:15.583"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231204 18:30:15.583" endtime="20231204 18:30:15.583"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="login-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231204 18:30:15.584" endtime="20231204 18:30:15.584"/>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${url}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="NOT RUN" starttime="20231204 18:30:15.584" endtime="20231204 18:30:15.584"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${url}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20231204 18:30:15.585" endtime="20231204 18:30:15.585"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${url}</arg>
+<arg>dashboard</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="NOT RUN" starttime="20231204 18:30:15.585" endtime="20231204 18:30:15.585"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231204 18:30:15.586" endtime="20231204 18:30:17.874"/>
+</kw>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20231204 18:30:03.648" endtime="20231204 18:30:17.875">Element with locator 'id:user-name' not found.</status>
+</test>
+<test id="s1-t2" name="LoginTest with Invalid credentials" line="22">
+<kw name="Open Browser" library="SeleniumLibrary" type="SETUP">
+<arg>${appURL} ${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231204 18:30:17.877" level="INFO">Opening browser 'firefox' to base url 'https://www.saucedemo.com/ Edge'.</msg>
+<status status="PASS" starttime="20231204 18:30:17.876" endtime="20231204 18:30:24.968"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20231204 18:30:24.968" endtime="20231204 18:30:24.972"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.saucedemo.com/</arg>
+<arg>edge</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231204 18:30:24.973" level="INFO">Opening browser 'edge' to base url 'https://www.saucedemo.com/'.</msg>
+<status status="PASS" starttime="20231204 18:30:24.973" endtime="20231204 18:30:29.173"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:user-name</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231204 18:30:29.178" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<status status="PASS" starttime="20231204 18:30:29.177" endtime="20231204 18:30:29.350"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231204 18:30:29.351" level="INFO">Typing text 'secret_sauce' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20231204 18:30:29.350" endtime="20231204 18:30:29.492"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="login-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231204 18:30:29.494" level="INFO">Clicking element 'xpath://*[@id="login-button"]'.</msg>
+<status status="PASS" starttime="20231204 18:30:29.493" endtime="20231204 18:30:29.621"/>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${url}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20231204 18:30:29.634" level="INFO">${url} = https://www.saucedemo.com/inventory.html</msg>
+<status status="PASS" starttime="20231204 18:30:29.622" endtime="20231204 18:30:29.634"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${url}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231204 18:30:29.635" endtime="20231204 18:30:29.636"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${url}</arg>
+<arg>dashboard</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<msg timestamp="20231204 18:30:29.636" level="FAIL">'https://www.saucedemo.com/inventory.html' does not contain 'dashboard'</msg>
+<status status="FAIL" starttime="20231204 18:30:29.636" endtime="20231204 18:30:29.638"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231204 18:30:29.639" endtime="20231204 18:30:31.983"/>
+</kw>
+<tag>Regression</tag>
+<status status="FAIL" starttime="20231204 18:30:17.876" endtime="20231204 18:30:31.984">'https://www.saucedemo.com/inventory.html' does not contain 'dashboard'</status>
+</test>
+<status status="FAIL" starttime="20231204 18:30:03.364" endtime="20231204 18:30:31.986"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Regression</stat>
+<stat pass="0" fail="1" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Demo">Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

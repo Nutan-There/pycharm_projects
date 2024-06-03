@@ -1,0 +1,18 @@
+1701694738366	geckodriver	INFO	Listening on 127.0.0.1:64028
+1701694738873	mozrunner::runner	INFO	Running command: "C:\\Users\\NTHERE\\.cache\\selenium\\firefox\\win64\\120.0.1\\firefox.exe" "--marionette" "--remote-debuggi ... " "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\NTHERE\\AppData\\Local\\Temp\\rust_mozprofiletBACIg"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1701694739556	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1701694739715	Marionette	INFO	Listening on port 64035
+WebDriver BiDi listening on ws://127.0.0.1:64029
+Read port: 64035
+1701694739948	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: services.settings: 
+  main/query-stripping Signature failed  [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+console.error: ({})
+DevTools listening on ws://127.0.0.1:64029/devtools/browser/f2ba1760-48a3-40ec-a3cf-854179a14a0b
+1701694769668	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1701695874640	Marionette	INFO	Stopped listening on port 64035
+Dynamically enable window occlusion 1
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: AbortError: Actor 'Conduits' destroyed before query 'RunListener' was resolved

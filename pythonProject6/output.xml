@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20240524 12:38:56.031" rpa="false" schemaversion="4">
+<suite id="s1" name="Test" source="C:\Users\NTHERE\PycharmProjects\pythonProject6\Resources\Test.robot">
+<test id="s1-t1" name="Test Case 1" line="5">
+<kw name="Log" library="BuiltIn">
+<arg>${my_list}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240524 12:38:56.066" level="INFO">['Apple', 'Banana', 'Orange']</msg>
+<status status="PASS" starttime="20240524 12:38:56.065" endtime="20240524 12:38:56.066"/>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<arg>@{my_list}</arg>
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<msg timestamp="20240524 12:38:56.067" level="INFO">Apple</msg>
+<msg timestamp="20240524 12:38:56.067" level="INFO">Banana</msg>
+<msg timestamp="20240524 12:38:56.067" level="INFO">Orange</msg>
+<status status="PASS" starttime="20240524 12:38:56.066" endtime="20240524 12:38:56.067"/>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<arg>${my_list}</arg>
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<msg timestamp="20240524 12:38:56.068" level="INFO">['Apple', 'Banana', 'Orange']</msg>
+<status status="PASS" starttime="20240524 12:38:56.068" endtime="20240524 12:38:56.068"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${my_list}[0]</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240524 12:38:56.069" level="INFO">Apple</msg>
+<status status="PASS" starttime="20240524 12:38:56.068" endtime="20240524 12:38:56.069"/>
+</kw>
+<for flavor="IN">
+<var>${item}</var>
+<value>@{my_list}</value>
+<iter>
+<var name="${item}">Apple</var>
+<kw name="Log" library="BuiltIn">
+<arg>${item}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240524 12:38:56.069" level="INFO">Apple</msg>
+<status status="PASS" starttime="20240524 12:38:56.069" endtime="20240524 12:38:56.069"/>
+</kw>
+<status status="PASS" starttime="20240524 12:38:56.069" endtime="20240524 12:38:56.069"/>
+</iter>
+<iter>
+<var name="${item}">Banana</var>
+<kw name="Log" library="BuiltIn">
+<arg>${item}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240524 12:38:56.070" level="INFO">Banana</msg>
+<status status="PASS" starttime="20240524 12:38:56.069" endtime="20240524 12:38:56.070"/>
+</kw>
+<status status="PASS" starttime="20240524 12:38:56.069" endtime="20240524 12:38:56.070"/>
+</iter>
+<iter>
+<var name="${item}">Orange</var>
+<kw name="Log" library="BuiltIn">
+<arg>${item}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240524 12:38:56.070" level="INFO">Orange</msg>
+<status status="PASS" starttime="20240524 12:38:56.070" endtime="20240524 12:38:56.070"/>
+</kw>
+<status status="PASS" starttime="20240524 12:38:56.070" endtime="20240524 12:38:56.070"/>
+</iter>
+<status status="PASS" starttime="20240524 12:38:56.069" endtime="20240524 12:38:56.070"/>
+</for>
+<status status="PASS" starttime="20240524 12:38:56.065" endtime="20240524 12:38:56.071"/>
+</test>
+<status status="PASS" starttime="20240524 12:38:56.035" endtime="20240524 12:38:56.072"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

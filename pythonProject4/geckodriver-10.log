@@ -1,0 +1,19 @@
+1701694320912	geckodriver	INFO	Listening on 127.0.0.1:58234
+1701694321421	mozrunner::runner	INFO	Running command: "C:\\Users\\NTHERE\\.cache\\selenium\\firefox\\win64\\120.0.1\\firefox.exe" "--marionette" "--remote-debuggi ... " "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\NTHERE\\AppData\\Local\\Temp\\rust_mozprofileTemznG"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1701694322261	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1701694322400	Marionette	INFO	Listening on port 58242
+WebDriver BiDi listening on ws://127.0.0.1:58235
+Read port: 58242
+1701694322622	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: (new Error("Unexpected content-type \"text/html\"", "resource://services-settings/Utils.sys.mjs", 399))
+console.error: services.settings: 
+  main/query-stripping Signature failed  [Exception... "Failure"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "<unknown>"  data: no]
+console.error: ({})
+DevTools listening on ws://127.0.0.1:58235/devtools/browser/4ca1b0e9-5aaa-4a49-a048-975bc4714b66
+1701694326337	Marionette	INFO	Stopped listening on port 58242
+Dynamically enable window occlusion 1
+console.error: Policies.jsm: 
+  Download failed - ERROR_NETWORK_FAILURE - https://ffextension.nexthink.com/nexthink-latest-an-fx.xpi

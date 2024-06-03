@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231201 16:04:25.637" rpa="false" schemaversion="4">
+<suite id="s1" name="Valid Login" source="C:\Users\NTHERE\PycharmProjects\pythonProject3\valid_login.robot">
+<test id="s1-t1" name="Valid Login" line="9">
+<kw name="Open Browser To Login Page" library="resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231201 16:04:25.890" level="INFO">Opening browser 'edge' to base url 'http://localhost:7272/'.</msg>
+<msg timestamp="20231201 16:04:33.125" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231201 16:04:33.125" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: MicrosoftEdge=119.0.2151.97)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7F6F825A2+60402]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7F6F072F2+253618]
+	(No symbol) [0x00007FF7F6CD9C99]
+	(No symbol) [0x00007FF7F6CD246E]
+	(No symbol) [0x00007FF7F6CC3BBB]
+	(No symbol) [0x00007FF7F6CC5124]
+	(No symbol) [0x00007FF7F6CC3DED]
+	(No symbol) [0x00007FF7F6CC2D5B]
+	(No symbol) [0x00007FF7F6CC2C60]
+	(No symbol) [0x00007FF7F6CC0E1B]
+	(No symbol) [0x00007FF7F6CC1B83]
+	(No symbol) [0x00007FF7F6CDC4EB]
+	(No symbol) [0x00007FF7F6D65DE1]
+	(No symbol) [0x00007FF7F6D4BA8A]
+	(No symbol) [0x00007FF7F6D1D766]
+	(No symbol) [0x00007FF7F6D65111]
+	(No symbol) [0x00007FF7F6D4B863]
+	(No symbol) [0x00007FF7F6D1C585]
+	(No symbol) [0x00007FF7F6D1B993]
+	(No symbol) [0x00007FF7F6D1CD14]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7F7163444+1161924]
+	(No symbol) [0x00007FF7F6D9E5F6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7F6E5B083+37459]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7F6E52C4D+3613]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7F7162184+1157124]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7F6F11648+295432]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7F6F0CB14+276180]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7F6F0CC42+276482]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7F6EFFA31+222705]
+	BaseThreadInitThunk [0x00007FFF9971257D+29]
+	RtlUserThreadStart [0x00007FFF99CEAA58+40]
+</msg>
+<status status="FAIL" starttime="20231201 16:04:25.889" endtime="20231201 16:04:33.128"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20231201 16:04:33.128" endtime="20231201 16:04:33.129"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" starttime="20231201 16:04:33.129" endtime="20231201 16:04:33.129"/>
+</kw>
+<kw name="Login Page Should Be Open" library="resource">
+<status status="NOT RUN" starttime="20231201 16:04:33.129" endtime="20231201 16:04:33.129"/>
+</kw>
+<status status="FAIL" starttime="20231201 16:04:25.889" endtime="20231201 16:04:33.129"/>
+</kw>
+<kw name="Input Username" library="resource">
+<arg>demo</arg>
+<status status="NOT RUN" starttime="20231201 16:04:33.130" endtime="20231201 16:04:33.130"/>
+</kw>
+<kw name="Input Password" library="resource">
+<arg>mode</arg>
+<status status="NOT RUN" starttime="20231201 16:04:33.131" endtime="20231201 16:04:33.131"/>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<status status="NOT RUN" starttime="20231201 16:04:33.131" endtime="20231201 16:04:33.131"/>
+</kw>
+<kw name="Welcome Page Should Be Open" library="resource">
+<status status="NOT RUN" starttime="20231201 16:04:33.132" endtime="20231201 16:04:33.132"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231201 16:04:33.133" endtime="20231201 16:04:35.571"/>
+</kw>
+<status status="FAIL" starttime="20231201 16:04:25.888" endtime="20231201 16:04:35.571">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: MicrosoftEdge=119.0.2151.97)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7F6F825A2+60402]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7F6F072F2+253618]
+	(No symbol) [0x00007FF7F6CD9C99]
+	(No symbol) [0x00007FF7F6CD246E]
+	(No symbol) [0x00007FF7F6CC3BBB]
+	(No symbol) [0x00007FF7F6CC5124]
+	(No symbol) [0x00007FF7F6CC3DED]
+	(No symbol) [0x00007FF7F6CC2D5B]
+	(No symbol) [0x00007FF7F6CC2C60]
+	(No symbol) [0x00007FF7F6CC0E1B]
+	(No symbol) [0x00007FF7F6CC1B83]
+	(No symbol) [0x00007FF7F6CDC4EB]
+	(No symbol) [0x00007FF7F6D65DE1]
+	(No symbol) [0x00007FF7F6D4BA8A]
+	(No symbol) [0x00007FF7F6D1D766]
+	(No symbol) [0x00007FF7F6D65111]
+    [ Message content over the limit has been removed. ]
+	(No symbol) [0x00007FF7F6D1CD14]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7F7163444+1161924]
+	(No symbol) [0x00007FF7F6D9E5F6]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7F6E5B083+37459]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF7F6E52C4D+3613]
+	Microsoft::Applications::Events::EventProperty::to_string [0x00007FF7F7162184+1157124]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7F6F11648+295432]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7F6F0CB14+276180]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7F6F0CC42+276482]
+	Microsoft::Applications::Events::ILogConfiguration::operator* [0x00007FF7F6EFFA31+222705]
+	BaseThreadInitThunk [0x00007FFF9971257D+29]
+	RtlUserThreadStart [0x00007FFF99CEAA58+40]</status>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="FAIL" starttime="20231201 16:04:25.640" endtime="20231201 16:04:35.574"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Valid Login">Valid Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

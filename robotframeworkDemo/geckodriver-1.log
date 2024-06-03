@@ -1,0 +1,14 @@
+1701773715396	geckodriver	INFO	Listening on 127.0.0.1:56210
+1701773715903	mozrunner::runner	INFO	Running command: "C:\\Users\\NTHERE\\.cache\\selenium\\firefox\\win64\\120.0.1\\firefox.exe" "--marionette" "--remote-debuggi ... " "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\NTHERE\\AppData\\Local\\Temp\\rust_mozprofilehUkyPq"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1701773717144	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1701773717329	Marionette	INFO	Listening on port 56219
+WebDriver BiDi listening on ws://127.0.0.1:56211
+Read port: 56219
+1701773717609	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:56211/devtools/browser/62846695-ac21-46f4-ae82-fb71ccbb9c37
+1701773732394	Marionette	INFO	Stopped listening on port 56219
+Dynamically enable window occlusion 1
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: AbortError: Actor 'Conduits' destroyed before query 'RunListener' was resolved

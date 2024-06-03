@@ -1,0 +1,14 @@
+1701693002237	geckodriver	INFO	Listening on 127.0.0.1:57177
+1701693002728	mozrunner::runner	INFO	Running command: "C:\\Users\\NTHERE\\.cache\\selenium\\firefox\\win64\\120.0.1\\firefox.exe" "--marionette" "--remote-debuggi ... " "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\NTHERE\\AppData\\Local\\Temp\\rust_mozprofileZqj2l1"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1701693003488	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1701693003680	Marionette	INFO	Listening on port 57185
+WebDriver BiDi listening on ws://127.0.0.1:57178
+Read port: 57185
+1701693003954	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:57178/devtools/browser/697122e1-6068-48bd-ab2a-f76b61878ab7
+1701693007166	Marionette	INFO	Stopped listening on port 57185
+Dynamically enable window occlusion 1
+JavaScript error: resource://gre/modules/AddonManager.sys.mjs, line 1495: NS_ERROR_NOT_INITIALIZED: AddonManager is not initialized

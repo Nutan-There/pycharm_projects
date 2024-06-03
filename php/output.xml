@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20240524 12:56:36.324" rpa="false" schemaversion="4">
+<suite id="s1" name="Signup" source="C:\Users\NTHERE\PycharmProjects\php\Resources\Signup.robot">
+<test id="s1-t1" name="open my browser" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240524 12:56:36.735" level="INFO">Opening browser 'edge' to base url 'https://phptravels.com/demo/'.</msg>
+<status status="PASS" starttime="20240524 12:56:36.733" endtime="20240524 12:56:41.745"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240524 12:56:41.746" endtime="20240524 12:56:41.828"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240524 12:56:41.829" endtime="20240524 12:56:41.830"/>
+</kw>
+<status status="PASS" starttime="20240524 12:56:36.732" endtime="20240524 12:56:41.830"/>
+</test>
+<status status="PASS" starttime="20240524 12:56:36.328" endtime="20240524 12:56:41.832"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Signup">Signup</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
